@@ -1,5 +1,25 @@
 {
+    "name": "sh-sh-dev/snappfood-analyzer",
+    "description": "Analyze your store with Snappfood comments",
+    "type": "project",
     "require": {
         "vlucas/phpdotenv": "^3.3"
-    }
+    },
+    "autoload": {
+        "files": [
+            "functions.php"
+        ]
+    },
+    "scripts": {
+        "post-root-package-install": [
+            "@php -r \"file_exists('.env') || copy('.env.example', '.env');\""
+        ]
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Shaygan Shokrollahi",
+            "email": "shayganshok0@gmail.com"
+        }
+    ]
 }
